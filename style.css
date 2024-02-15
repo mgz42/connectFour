@@ -1,0 +1,131 @@
+:root {
+    --current-player: #6babff;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#landingPage {
+    z-index: 100;
+    background-image: linear-gradient(rgb(105, 105, 105), rgb(226, 226, 226));
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#selecteurs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.active {
+    color: var(--current-player);
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.btn {
+    background-color: rgb(232, 232, 232);
+}
+
+.hidden {
+    display: none;
+}
+
+.carte {
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    border: 3px solid rgba(165, 201, 122, 0);
+    height: 250px;
+    transition: all 0.3s ease;
+}
+
+.un {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color:  rgb(96, 96, 96);
+    background-size: cover;
+}
+
+.deux {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: rgb(96, 96, 96);
+    background-size: cover;
+}
+
+.selectedPlayer {
+    border: 3px solid var(--current-player);
+}
+
+h4 {
+    color: var(--current-player);
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+i {
+    font-size: 2rem;
+    color: rgb(105, 105, 105);
+}
+
+.selectedTurn {
+    opacity: 1;
+}
+
+#pop-up {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.326);
+    z-index: 150;
+}
+
+#pop {
+    height: 150px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffb4;
+    border-radius: 1rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#pop .btn{
+    width: 100px;
+    align-self: center;
+    border: 1px solid #525252;
+}
+
+#eraseCache {
+    position: fixed;
+    bottom: 6rem;
+    left: 6rem;
+    background-color: #ff8282;
+    color: rgb(255, 255, 255);
+}
